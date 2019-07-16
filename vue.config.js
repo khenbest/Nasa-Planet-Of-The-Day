@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '/Nasa-Planet-Of-The-Day/',
+  publicPath: 'Nasa-Planet-Of-The-Day/',
   outputDir: 'public'
 }
