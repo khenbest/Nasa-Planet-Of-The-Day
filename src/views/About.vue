@@ -9,7 +9,7 @@
           <div class="form-row mb-2 mt-2">
 
             <div class="col-12">
-              <button class="inline-form form-control btn btn-outline-dark" @click="getDate()">Surprise
+              <button class="inline-form form-control btn btn-outline-dark" @click="getPictureOfDay()">Surprise
                 Me!</button>
             </div>
           </div>
@@ -39,12 +39,12 @@
         searchDate: ''
       }
     },
+    created() {
+      this.getPictureOfDay()
+    },
     computed: {
       pictureOfDay() {
         return this.$store.state.apod
-      },
-      date() {
-        return this.$store.state.date
       }
     },
     methods: {
@@ -52,17 +52,12 @@
         this.$store.dispatch("getAPODBySearch", this.searchDate)
       },
       getPictureOfDay() {
-        this.$store.dispatch("getAPOD")
-      },
-      getDate() {
         let date = new Date(new Date(2000, 0, 1).getTime() + Math.random() * (new Date().getTime() - new Date(2000, 0, 1).getTime()))
         let randomDate = moment(date).format("YYYY-MM-DD")
         this.$store.dispatch("getAPODBySearch", randomDate)
-
       }
     },
     mounted() {
-      this.$store.dispatch("getAPOD")
     },
     components: {}
   }
