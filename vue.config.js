@@ -1,9 +1,4 @@
 module.exports = {
-  publicPath: undefined,
+  publicPath: '/Nasa-Planet-Of-The-Day/',
   outputDir: 'docs',
-  assetsDir: undefined,
-  runtimeCompiler: undefined,
-  productionSourceMap: false,
-  parallel: undefined,
-  css: undefined
 }
