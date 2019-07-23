@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '/Nasa-Planet-Of-The-Day/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/Nasa-Planet-Of-The-Day/' : '/',
   outputDir: '/docs'
 }
