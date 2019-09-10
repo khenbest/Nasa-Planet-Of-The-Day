@@ -1,5 +1,5 @@
 <template>
-  <div class="APOD container-fluid">
+  <div class="container-fluid">
     <div class="row justify-content-center vh-50">
       <div class="form-row mb-4">
         <div class="col-12">
