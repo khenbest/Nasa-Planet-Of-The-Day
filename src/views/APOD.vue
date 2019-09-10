@@ -1,5 +1,5 @@
 <template>
-  <div class="about container-fluid">
+  <div class="APOD container-fluid">
     <div class="row justify-content-center vh-50">
       <div class="form-row mb-4">
         <div class="col-12">
@@ -14,15 +14,13 @@
             </div>
           </div>
         </div>
-
-
       </div>
-      <div class="row justify-content-center">
-        <div class="col-8">
-          <h1>{{pictureOfDay.title}}</h1>
-          <img :src="pictureOfDay.hdurl" class="img-fluid " alt="Picture Of The Day">
-          <h6>{{pictureOfDay.explanation}}</h6>
-        </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <h1>{{pictureOfDay.title}}</h1>
+        <img :src="pictureOfDay.hdurl" class="img-fluid " alt="Picture Of The Day">
+        <h6>{{pictureOfDay.explanation}}</h6>
       </div>
     </div>
   </div>
