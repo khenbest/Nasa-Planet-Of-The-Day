@@ -8,6 +8,10 @@
 </template>
 
 <style>
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   #app {
     background-color: black;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
